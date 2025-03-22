@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>fogorredocareca</title>
+    <style>
+        @font-face {
+            font-family: 'myFirstFont';
+            src: url(OpenDyslexic-Bold.woff) format('woff');
+        }
+
+        .markeryellow {
+            background-color: yellow;
+        }
+
+        .textdefaultsettings {
+            color: white;
+            font-family: 'myFirstFont', sans-serif;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #2e2e2e;
+        }
+
+        .textdefaultsettings2 {
+            color: white;
+            font-family: 'myFirstFont', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tocentertext {
+            text-align: center;
+        }
+
+        body {
+            background: linear-gradient(#111111, #1f1f1f);
+            height: 100vh;
+            margin: 0;
+        }
+
+        .tocolorwhite {
+            color: white;
+        }
+
+        .gradient-background {
+            background: linear-gradient(247deg, #fffb04, #ff9900);
+            background-size: 120% 120%;
+            animation: gradient-animation 1s ease infinite;
+        }
+
+        .gradient-background2 {
+            background: linear-gradient(247deg, #fffb04, #ff9900);
+            background-size: 120% 120%;
+            animation: gradient-animation 1s ease infinite;
+        }
+
+        .gradient-background2:hover {
+            background: linear-gradient(247deg, #fffebd, #ffcd81);
+        }
+
+        .bgrepeatsquares {
+            background-repeat: repeat;
+            background-image: url('diamondshape.png');
+            background-size: 50px 50px;
+            /* Ajuste conforme necessário */
+            width: 100%;
+            height: 100vh;
+            animation: scrollBackground 15s linear infinite;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .containergradient {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 50%;
+            margin: 0;
+            height: 100px;
+            border-radius: 40px;
+        }
+
+        .containergradient2 {
+            display: block;
+            margin: auto;
+            align-items: center;
+            width: 400px;
+            height: 75px;
+            border-radius: 40px;
+        }
+
+        .borderimg {
+            border-radius: 40px;
+            display: block;
+            margin: auto;
+        }
+
+        .button1:hover {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .btn-6:hover {
+            animation: jello-horizontal 0.9s both;
+        }
+
+        @keyframes jello-horizontal {
+            0% {
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                transform: scale3d(0.95, 1.05, 1);
+            }
+
+            75% {
+                transform: scale3d(1.05, 0.95, 1);
+            }
+
+            100% {
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @keyframes scrollBackground {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -100% -100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgrepeatsquares">
+        <div>
+            <p></p>
+            <div class="containergradient gradient-background">
+                <div class="container">
+                    <img src="./tcdlogo2.png" alt="The Chosen Duck Logo" , height=76 weight=128>
+                    <h1 class="tocentertext tocolorwhite textdefaultsettings gaptoimage">THE CHOSEN DUCK</h1>
+                </div>
+            </div>
+            <p></p>
+            <p class="textdefaultsettings2 tocentertext">Welcome to The Chosen Duck. The world that you can be a...
+                Duck!
+                What was you expecting?</p>
+            <img src="./patopatovai.png" alt="The Chosen Duck Icon" class="borderimg" , height=200 weight=200>
+            <p class="textdefaultsettings2 tocentertext">The Chosen Duck (ver absalpha 1.5)</p>
+            <a href="https://google.com">
+                <div class="containergradient2 gradient-background2 btn-6">
+                    <h1 class="textdefaultsettings tocentertext" ,>DOWNLOAD</h1>
+                </div>
+            </a>
+            <a href="https://google.com">
+                <div class="containergradient2 gradient-background2 btn-6">
+                    <h1 class="textdefaultsettings tocentertext" ,>WEB PLAYER</h1>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
